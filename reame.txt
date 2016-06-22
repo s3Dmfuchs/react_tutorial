@@ -1,0 +1,21 @@
+npm install -g webpack-dev-server
+webpack-dev-server --content-base src --inline --hot
+oder: 
+webpack-dev-server --content-base src
+http://localhost:8080/webpack-dev-server/index.html
+
+"dev": "./node_modules/.bin/webpack-dev-server --content-base src --inline --hot",
+
+// Eine Klasse erweitert eine React.Compnent
+Class XXX extends React.Component {
+// die RenderMethode muss überschrieben werden
+	render() {
+// Die RenderMethode gibt genau ein HTML-Objekt zurück
+		return (
+			<div>
+				HTML-Code
+				alles in {} wird als JS ausgeführt
+			</div>
+		)
+	}
+}
